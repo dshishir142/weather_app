@@ -1,0 +1,71 @@
+<!-- direction before use
+put the weather folder directly in the htdocs folder -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sheet.css">
+    <title>WeatherToday</title>
+</head>
+<body>
+
+    <div class="box">
+
+        <div id="location">
+            <img src="images used/icons8-address-100.png" class="icon">
+        </div>
+    
+        <input type="text" id="display">
+
+        <button id="search">
+            <img src="images used/icons8-search-50.png" value = 'kent' class="icon">
+        </button>
+        
+        <div id="centre">
+
+            <h3 id="city"></h3>
+
+            <div id="date">Date:</div>
+
+            <img src="images used/lightning.png" id="condi_image">
+
+        </div>
+
+        <div class="below">
+
+            <h1 id="tem"></h1>
+
+            <h3 id="condi"></h3>
+
+        </div>
+
+            <ul>
+                <li id="humidity"></li>
+                <li id="wind"></li>
+            </ul>
+
+
+    </div>
+
+    <div>
+        <h2 style="font-family:Arial, Helvetica, sans-serif;">History</h2>
+        <table id="table">
+            <tr class="top-head">
+                <td>Name</td>
+                <td>Date</td>
+                <td>Temperature</td>
+                <td>condition</td>
+                <td>Humidity</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="sheet.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+GET http://localhost/weather/index.php?place=London&all_data=true

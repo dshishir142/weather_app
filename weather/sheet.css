@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(to right,rgb(42, 168, 177),rgb(140, 215, 187));
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.box{
+    display:flex;
+    border: 1px solid rgb(42, 168, 177);
+    height:620px;
+    width: 460px;
+    position:absolute;
+    left:540px;
+    top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px;
+    background-image: linear-gradient(to right,rgb(42, 168, 177),rgb(140, 215, 187));
+
+}
+#display{
+    position: absolute;
+    height: 30px;
+    width:290px;
+    left: 100px;
+    top: 20px;
+    background-image: linear-gradient(to left,rgb(42, 168, 177),rgb(140, 215, 187));
+    border: 2px solid rgb(42, 168, 177);
+    border-radius: 10px;
+}
+#search{ 
+    border: 2px solid rgb(140, 215, 187);
+    border-radius: 8px;
+    background-color: inherit;
+    position:relative;
+    height:30px;
+    width:50px;
+    top: 24px;
+    left: 380px;
+}
+#search:hover{
+    border: 2px solid rgb(42, 168, 177);
+}
+.icon{
+    height:25px;
+}
+#location{
+    position: relative;
+    top: 24px;
+    left: 40px;
+ }
+#condi_image{
+    height: 200px;
+    position: relative;
+    right: 90px;  
+}
+#centre{
+    position: relative;
+    top: 100px;
+    left: 160px;
+}
+#city{
+    position: relative;
+    right: 15px;
+}
+.below{
+    position: relative;
+    top: 350px;
+    right: 80px;
+}
+ul{
+    position: relative;
+    top: 500px;
+    right: 350px;
+    list-style-type: none;
+    font-size: 20px;
+}
+#date{
+    position: relative;
+    right: 45px;
+}
+#table {
+    border-collapse: collapse;
+    margin-top: 5px;
+  }
+  
+  #table th,
+  #table td {
+    padding: 2px;
+    text-align: left;
+    border: 1px solid #ddd;
+
+  }
+  
+  #table th {
+    background-color: rgb(42, 168, 177);
+    color: white;
+  }
+  
+  #table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #table tr:hover {
+    background-color: #ddd;
+  }
