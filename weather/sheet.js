@@ -96,20 +96,34 @@ function fetchHistory(){
   .then(data => {
     //loop through each elements that was received as json
     data.forEach(weather => {
+
+            // setting the secondary weather data in the local storage
+            localStorage.setItem('country-table',`${weather.country}`);
+            localStorage.setItem('Date-table',`${weather.Date}`);
+            localStorage.setItem('temp-table',`${weather.temp}`);
+            localStorage.setItem('condi-table',`${weather.condi}`);
+            localStorage.setItem('humi-table',`${weather.humi}`);
+      
+            // getting the secondary weather data from the local storage
+            let country = localStorage.getItem('country-table');
+            let Date = localStorage.getItem('Date-table');
+            let temp = localStorage.getItem('temp-table');
+            let condi = localStorage.getItem('condi-table');
+            let humi = localStorage.getItem('humi-table');
+
       tr = document.createElement("tr");
       //value of each element country,date,temperature,weather condition and the humidity
       tr.innerHTML = `
-        <td>${weather.country}</td>
-        <td>${weather.Date}</td>
-        <td>${weather.temp}</td>
-        <td>${weather.condi}</td>
-        <td>${weather.humi}</td>
+      <td>${Date}</td>
+      <td>${temp}</td>
+      <td>${condi}</td>
+      <td>${humi}</td>
+      <td>${country}</td>
       `;
       table.appendChild(tr);
     });
   })
 }
 //call function 
-fetchHistory()
-
 fetchdata();
+fetchHistory();
